@@ -31,8 +31,8 @@ Tag.belongsToMany(Product, {
   through: {
     model: ProductTag,
     unique: false,
-    foreignKey: "product_id",
-  }, as: "tags"
+    foreignKey: "tag_id",
+  }, as: "products"
 })
 
 module.exports = {
