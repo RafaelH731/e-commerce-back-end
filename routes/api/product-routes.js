@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'Not found' });
       return;
     }
-    res.status(200).json(prodData);
+    res.status(200).json(productData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -117,7 +117,7 @@ router.delete('/:id', async (req, res) => {
   try {
     const products = await Product.findByPk(req.params.id);
     // if there is an error, log it and send an error response
-    if (!prodcuts) {
+    if (!products) {
       res.status(404).json({ message: 'Not found' });
       return;
     }

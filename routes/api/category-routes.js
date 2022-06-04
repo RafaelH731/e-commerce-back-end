@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'Not found' });
       return;
     }
-    res.status(200).json(catData);
+    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }

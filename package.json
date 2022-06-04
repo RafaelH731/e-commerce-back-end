@@ -66,7 +66,8 @@
   },
   "scripts": {
     "test": "none",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seeds":"node ./seeds/index.js"
   },
   "repository": {
     "type": "git",
